@@ -7,6 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import org.controlsfx.control.action.Action;
 
+import java.math.BigInteger;
+import java.util.Scanner;
+
 public class HelloController {
     @FXML
     private TextField txtop;
@@ -21,6 +24,30 @@ public class HelloController {
 
     @FXML
     private void operar(ActionEvent event){
+    String opcion;
+    int num1=0,num2=0;
+    try {
+        do {
+            opcion= this.txtop.getText();
+            if (!opcion.equalsIgnoreCase("Salir")) {
+                num1=Integer.parseInt(this.txtnum1.getText());
+                num2=Integer.parseInt(this.txtnum2.getText());
+            }
+            System.out.println(num1 + " "+num2+" "+ opcion+"\n");
+
+        }while (!opcion.equalsIgnoreCase("Salir"));
+
+
+
+
+
+    }catch (NumberFormatException e){
+
+
+    }
+
+
+
 
 
     }
