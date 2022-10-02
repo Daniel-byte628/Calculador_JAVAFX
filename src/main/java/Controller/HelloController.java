@@ -50,6 +50,8 @@ public class HelloController {
                        new BigInteger(String.valueOf(num2)));
 
               this.txtresult.setText(String.valueOf(resultado));
+            }else {
+                System.exit(0);
             }
             System.out.println(num1 + " "+num2+" "+ opcion+" "+ resultado+"\n");
 
